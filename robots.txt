@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://baratovinil.com.br/sitemap.xml

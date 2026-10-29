@@ -1,0 +1,26 @@
+:root{--bg:#f4f6f8;--ink:#12213a;--sun:#ffd428;--red:#d7263d;--mut:#4b5a72;--line:#d5dce6}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1a2c;--ink:#eef2f8;--mut:#a9b6ca;--line:#27385a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}a:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.w{max-width:760px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+header .w{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px}
+.logo{font:700 1.3rem Georgia,"Roboto Slab",serif;text-decoration:none}
+.logo:before{content:"";display:inline-block;width:.7em;height:.7em;border-radius:50%;background:var(--sun);margin-right:.35em}
+nav a{margin-left:20px;text-decoration:none;color:var(--mut)}nav a:hover{color:var(--ink)}
+h1,h2,h3{font-family:Georgia,"Roboto Slab",serif;line-height:1.15}
+h1{font-size:clamp(2.1rem,6vw,3.4rem);margin:.2em 0 .3em}
+.hero{padding:56px 0 40px;position:relative}
+.hero p{color:var(--mut);max-width:30em}
+.sticker{position:absolute;right:0;top:36px;width:116px;height:116px;border-radius:50%;background:var(--sun);color:#12213a;display:flex;align-items:center;justify-content:center;text-align:center;font:700 1.15rem/1.1 Georgia,serif;transform:rotate(12deg);text-decoration:none}
+@media(max-width:640px){.sticker{position:static;margin-top:20px}}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:12px 22px;border-radius:4px;text-decoration:none;font-weight:600;margin:6px 10px 6px 0}
+.btn.alt{background:none;color:var(--ink);border:2px solid var(--ink)}
+.list a{display:block;padding:14px 0 14px 16px;border-left:5px solid var(--sun);border-bottom:1px solid var(--line);text-decoration:none;font-weight:600}
+.list a small{display:block;font-weight:400;color:var(--mut)}
+.list a:hover{border-left-color:var(--red)}
+article{padding:40px 0}article p,article li{max-width:38em}
+.note{background:var(--sun);color:#12213a;padding:10px 14px;font-size:.9rem;border-radius:4px}
+footer{border-top:1px solid var(--line);margin-top:48px;padding:24px 0;font-size:.88rem;color:var(--mut)}
+footer a{margin-right:14px}
