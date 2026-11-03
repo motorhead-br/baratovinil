@@ -56,3 +56,5 @@ footer{border-top:1px solid var(--line);margin-top:56px;padding:24px 0;font-size
 footer a{margin-right:14px}
 @media(max-width:760px){.hero{grid-template-columns:1fr}}
 @media(max-width:520px){.grid{gap:10px}.fl{min-width:100%;padding-top:0}}
+
+a.chip{display:inline-block;text-decoration:none}.related{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 28px}.explore{margin-top:40px}.explore h2,article h2{font-size:1.3rem;margin:1.4em 0 .4em}article .grid{margin:6px 0 18px}
