@@ -70,3 +70,4 @@ a.chip{display:inline-block;text-decoration:none}.related{display:flex;flex-wrap
 .gl{color:#fff;font-weight:600;font-size:.85rem;text-decoration:underline;padding:0 4px}
 ul{padding-left:1.2em}
 .card,.cwrap{min-width:0}.art{max-width:100%}
+@media(min-width:960px){.classics .grid.cgrid{grid-template-columns:repeat(5,minmax(0,1fr))}}
