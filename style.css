@@ -89,3 +89,5 @@ ul{padding-left:1.2em}
 .tile .ico{position:absolute;left:12%;top:12%;width:76%;height:76%;filter:drop-shadow(0 4px 5px rgba(0,0,0,.35))}
 .ico2{width:56px;height:56px}.ic{margin-bottom:4px}
 @media(max-width:760px){.promo{grid-template-columns:1fr}}
+
+.player{margin:12px 0 8px}.player iframe{display:block}
