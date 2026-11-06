@@ -91,3 +91,6 @@ ul{padding-left:1.2em}
 @media(max-width:760px){.promo{grid-template-columns:1fr}}
 
 .player{margin:12px 0 8px}.player iframe{display:block}
+.amz{display:block;font-weight:700;font-size:.82rem;background:#000;color:#fff;border-radius:999px;text-align:center;padding:8px 10px}.amz:hover{background:#333}
+.classics .card{color:#000}.classics .card .go{background:#000;color:#fff;border-radius:999px;text-align:center;padding:8px 10px}
+.classics .card .tit{font-family:inherit;font-weight:700;font-size:1rem;line-height:1.25;margin:2px 0 10px}
