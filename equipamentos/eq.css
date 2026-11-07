@@ -1,0 +1,17 @@
+.eqmain{background:#FFF8EC}.eqbg{background:#FFF8EC;color:#141414;font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.55}
+.eqbg>div:first-child{padding-bottom:40px!important}
+.eqbg h1,.eqbg h2,.eqbg h3,.eqbg p{margin:0}
+.eqrest{max-width:1120px;margin:0 auto;padding:0 20px 80px}
+.eqrest .eqhead{display:flex;flex-direction:column;gap:10px;max-width:680px;margin-bottom:28px}
+.eqk{font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#6A2FB0}
+.eqbig,.eqrest h2{font-family:'Bricolage Grotesque',Inter,sans-serif;font-weight:800;line-height:1.1}
+.eqbig{font-size:clamp(30px,4vw,44px)}
+.eqrest h2{font-size:clamp(26px,3.4vw,36px);margin:48px 0 14px}
+.eqrest h3{font-family:'Bricolage Grotesque',Inter,sans-serif;font-weight:800;font-size:22px;margin:28px 0 8px}
+.eqrest p,.eqrest li{max-width:760px}
+.eqrest table{background:#fff;border:3px solid #141414;border-radius:16px;border-collapse:separate;border-spacing:0;overflow:hidden}
+.eqrest th{background:#FFD400;color:#141414}
+.eqrest a{color:#6A2FB0}
+.eqrest .tablewrap,.eqrest .tw{overflow-x:auto}
+@media(max-width:700px){.eqrest table{display:block;overflow-x:auto}}
+.eqrest .eqhead h2{margin:0}.eqrest .eqhead{margin-top:20px}
