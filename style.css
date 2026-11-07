@@ -94,3 +94,5 @@ ul{padding-left:1.2em}
 .amz{display:block;font-weight:700;font-size:.82rem;background:#000;color:#fff;border-radius:999px;text-align:center;padding:8px 10px}.amz:hover{background:#333}
 .classics .card{color:#000}.classics .card .go{background:#000;color:#fff;border-radius:999px;text-align:center;padding:8px 10px}
 .classics .card .tit{font-family:inherit;font-weight:700;font-size:1rem;line-height:1.25;margin:2px 0 10px}
+.dgrid{display:grid;grid-template-columns:minmax(200px,260px) 1fr;gap:28px;align-items:start}@media(max-width:640px){.dgrid{grid-template-columns:1fr}.dgrid .onecard{max-width:260px}}.amzbtn{display:inline-block;background:#000;color:#fff;font-weight:700;border-radius:999px;padding:12px 26px;text-decoration:none}.amzbtn:hover{background:#333}
+.dgrid .card .tit{font-family:inherit;font-weight:700;font-size:1rem}.dgrid .card{color:#000}
