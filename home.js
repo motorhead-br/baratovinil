@@ -27,8 +27,8 @@ function render(){
  var cmp=S.s=="a"?function(a,b){return a[0].localeCompare(b[0],"pt")}:S.s=="n"?function(a,b){return a[2]-b[2]}:function(a,b){return b[2]-a[2]};
  var by={};l.forEach(function(x){(by[x[3]]=by[x[3]]||[]).push(x)});
  var html=Object.keys(by).sort(function(a,b){return by[b].length-by[a].length||a.localeCompare(b,"pt")}).map(function(g){
-  var it=by[g].sort(cmp),link=GS[g]||"#filtro";
-  return'<section class="bv-row" aria-label="'+esc(g)+'"><a class="bv-tile" href="'+link+'"><span class="a">'+it.length+(it.length==1?" disco":" discos")+'</span><span class="b">'+esc(g)+'</span><span class="c">Ver todos ›</span></a>'+it.map(card).join("")+"</section>"}).join("");
+  var it=by[g].sort(cmp),link="https://www.amazon.com.br/s?k="+encodeURIComponent("disco de vinil "+g)+"&tag="+T;
+  return'<section class="bv-row" aria-label="'+esc(g)+'"><a class="bv-tile" href="'+esc(link)+'" target="_blank" rel="nofollow sponsored noopener"><span class="a">'+it.length+(it.length==1?" disco":" discos")+'</span><span class="b">'+esc(g)+'</span><span class="c">Ver na Amazon ›</span></a>'+it.map(card).join("")+"</section>"}).join("");
  $("catalogo").innerHTML=html;$("vazio").hidden=l.length!==0;
  $("c").textContent=l.length+(l.length==1?" disco":" discos");
  var n=["g","d","o"].filter(function(k){return S[k]}).length+(S.q?1:0);
@@ -43,4 +43,11 @@ $("topform").addEventListener("submit",function(e){e.preventDefault();$("filtro"
 $("sortsel").addEventListener("change",function(e){S.s=e.target.value;render()});
 $("x").addEventListener("click",function(){S.q=S.g=S.d=S.o="";fs.value=ts.value="";render()});
 render();
+var trk=$("trk");
+if(trk){var pv=document.querySelector(".bv-prev"),nx=document.querySelector(".bv-next");
+ var upd=function(){var m=trk.scrollWidth-trk.clientWidth-2;pv.hidden=trk.scrollLeft<=2;nx.hidden=trk.scrollLeft>=m};
+ var step=function(d){var c=trk.querySelector(".bvc");trk.scrollBy({left:d*(c.offsetWidth+16)*(window.innerWidth>900?3:1),behavior:"smooth"})};
+ pv.addEventListener("click",function(){step(-1)});nx.addEventListener("click",function(){step(1)});
+ trk.addEventListener("scroll",upd);window.addEventListener("resize",upd);upd();
+ trk.addEventListener("keydown",function(e){if(e.key=="ArrowRight")step(1);if(e.key=="ArrowLeft")step(-1)})}
 })();
