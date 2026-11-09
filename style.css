@@ -96,3 +96,12 @@ ul{padding-left:1.2em}
 .classics .card .tit{font-family:inherit;font-weight:700;font-size:1rem;line-height:1.25;margin:2px 0 10px}
 .dgrid{display:grid;grid-template-columns:minmax(200px,260px) 1fr;gap:28px;align-items:start}@media(max-width:640px){.dgrid{grid-template-columns:1fr}.dgrid .onecard{max-width:260px}}.amzbtn{display:inline-block;background:#000;color:#fff;font-weight:700;border-radius:999px;padding:12px 26px;text-decoration:none}.amzbtn:hover{background:#333}
 .dgrid .card .tit{font-family:inherit;font-weight:700;font-size:1rem}.dgrid .card{color:#000}
+
+/* novo visual (design Barato Vinil): cabeçalho claro, rodapé escuro, fontes */
+body{font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:#fff;color:#1C1917;border-bottom:1px solid #E7E5E4;border-image:none}
+header a{color:#1C1917}header a:hover{color:#C2410C}header a:focus-visible{outline-color:#F97316}
+.logo{font:700 1.4rem Montserrat,system-ui,sans-serif;letter-spacing:.01em}
+.logo:before{width:1.8em;height:1.8em;margin-right:.55em;vertical-align:-.5em}
+nav a{font-weight:500}
+footer{background:#111;color:#D6D3D1;border-top:0;margin-top:56px;padding:28px 0}footer a{color:#fff}
