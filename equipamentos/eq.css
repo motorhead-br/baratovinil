@@ -15,3 +15,15 @@
 .eqrest .tablewrap,.eqrest .tw{overflow-x:auto}
 @media(max-width:700px){.eqrest table{display:block;overflow-x:auto}}
 .eqrest .eqhead h2{margin:0}.eqrest .eqhead{margin-top:20px}
+
+.cmp .cmp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}
+.cmp .cmp-card{background:#fff;border:3px solid #141414;border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:8px}
+.cmp .cmp-card h3{margin:0;font-size:24px}
+.cmp .cmp-card ul{margin:0;padding-left:18px;font-size:15px}
+.cmp .cmp-tag{align-self:flex-start;background:#FFD400;border:2px solid #141414;border-radius:999px;padding:2px 10px;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.cmp .cmp-ideal{font-size:15px;margin:4px 0 8px}
+.cmp a.cmp-go{margin-top:auto;align-self:flex-start;background:#141414;color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:10px 18px}
+.cmp .cmp-note,.cmp .cmp-src{font-size:14px;color:#444;margin-top:12px}
+.cmp .eqhead h1{margin:0}
+.eqmain .cmp{padding-top:56px}
+.eqbg .cmp-link{background:#fff;border:3px solid #141414;border-radius:22px;padding:22px;text-decoration:none;color:#141414;display:flex;flex-direction:column;gap:6px;flex:1 1 300px}
