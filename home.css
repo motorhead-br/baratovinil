@@ -15,7 +15,7 @@ a{color:#1C1917}a:hover{color:#C2410C}
 .bv-nav{display:flex;flex-wrap:wrap;gap:4px 24px;padding-bottom:12px;font-size:14px;font-weight:500}.bv-nav a{text-decoration:none;padding:6px 0}.bv-nav .bv-hot{color:#C2410C;font-weight:700}
 .bv-main{padding-top:24px;padding-bottom:64px;display:flex;flex-direction:column;gap:40px}
 .bv-hero{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:16px}
-.bv-guide-card{background:url(/img/guia.webp) center/cover no-repeat;color:#fff;border-radius:6px;text-decoration:none;display:flex;align-items:center;justify-content:center;padding:48px 40px;min-height:440px;position:relative;text-align:center;overflow:hidden}.bv-guide-card:hover{color:#fff}
+.bv-guide-card{background:linear-gradient(135deg,#141414,#3a2a12);color:#fff;border-radius:6px;text-decoration:none;display:flex;align-items:center;justify-content:center;padding:48px 40px;min-height:440px;position:relative;text-align:center;overflow:hidden}.bv-guide-card:hover{color:#fff}
 .bv-shade{position:absolute;inset:0;background:rgba(0,0,0,.5)}
 .bv-gc{position:relative;display:flex;flex-direction:column;align-items:center;gap:16px;max-width:600px}
 .bv-k{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
@@ -67,3 +67,19 @@ a{color:#1C1917}a:hover{color:#C2410C}
 @media(max-width:600px){.bv-track .bvc{flex-basis:calc((100% - 16px)/2.2)}.bv-prev{left:-6px}.bv-next{right:-6px}}
 
 .bv-amz{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2px 12px;background:#FACC15;color:#111;text-align:center;padding:10px 16px;font-size:14px;text-decoration:none;line-height:1.3}.bv-amz:hover{background:#FDE047;color:#111}.bv-amz strong{font-weight:800;letter-spacing:.01em}.bv-amz span{font-weight:600;text-decoration:underline;text-underline-offset:3px}
+/* ---- equipamentos ---- */
+.bv-sechead h1{font:800 clamp(26px,3.4vw,40px)/1.1 'DM Sans',sans-serif;margin:0 0 6px;letter-spacing:-.01em}
+.eq-h2{font:800 clamp(24px,3vw,32px)/1.1 'DM Sans',sans-serif;margin:0 0 4px}
+.eq-sq{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin-top:18px}
+.eq-sqc{aspect-ratio:1/1;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:4px;padding:18px;border:1px solid #E7E5E4;border-radius:18px;background:#FAFAF9;color:#1C1917;font:inherit;text-align:left;cursor:pointer;transition:transform .15s,background .15s,box-shadow .15s}
+.eq-sqc:nth-child(1){background:#FEF3C7}.eq-sqc:nth-child(2){background:#FFE4E6}.eq-sqc:nth-child(3){background:#DBEAFE}.eq-sqc:nth-child(4){background:#DCFCE7}.eq-sqc:nth-child(5){background:#EDE9FE}.eq-sqc:nth-child(6){background:#FFEDD5}
+.eq-sqc:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(0,0,0,.1)}.eq-sqc .eq-ic{margin-bottom:auto}.eq-sqc b{font-size:16px;line-height:1.2}.eq-sqc span{font-size:13px;color:#57534E}
+.eq-links{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:16px;font-size:14px;font-weight:700}.eq-links a{text-decoration:none;border-bottom:2px solid #FACC15}
+.eq-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.eq-card{display:flex;flex-direction:column;gap:8px;padding:18px;border:1px solid #E7E5E4;border-radius:16px;background:#fff;text-decoration:none;color:#1C1917;transition:border-color .15s,box-shadow .15s}.eq-card:hover{border-color:#1C1917;box-shadow:0 8px 20px rgba(0,0,0,.08);color:#1C1917}
+.eq-top{display:flex;align-items:center;justify-content:space-between;color:#57534E}.eq-cat{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.eq-card h3{margin:0;font-size:18px;line-height:1.25}.eq-card p{margin:0;font-size:14px;color:#44403C}
+.eq-tags{display:flex;flex-wrap:wrap;gap:6px}.eq-tags span{font-size:12px;font-weight:600;background:#F5F5F4;border-radius:999px;padding:3px 10px}
+.eq-go{margin-top:auto;padding-top:6px;font-size:14px;font-weight:700;color:#C2410C}
+@media(max-width:1000px){.eq-sq{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){.eq-sq{grid-template-columns:repeat(2,minmax(0,1fr))}.eq-sqc{padding:14px}}
