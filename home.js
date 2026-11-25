@@ -27,8 +27,8 @@ function render(){
  var cmp=S.s=="a"?function(a,b){return a[0].localeCompare(b[0],"pt")}:S.s=="n"?function(a,b){return a[2]-b[2]}:function(a,b){return b[2]-a[2]};
  var by={};l.forEach(function(x){(by[x[3]]=by[x[3]]||[]).push(x)});
  var html=Object.keys(by).sort(function(a,b){return by[b].length-by[a].length||a.localeCompare(b,"pt")}).map(function(g){
-  var it=by[g].sort(cmp),link="https://www.amazon.com.br/s?k="+encodeURIComponent("disco de vinil "+g)+"&tag="+T;
-  return'<section class="bv-row" aria-label="'+esc(g)+'"><a class="bv-tile" href="'+esc(link)+'" target="_blank" rel="nofollow sponsored noopener"><span class="a">'+it.length+(it.length==1?" disco":" discos")+'</span><span class="b">'+esc(g)+'</span><span class="c">Ver na Amazon ›</span></a>'+it.map(card).join("")+"</section>"}).join("");
+  var it=by[g].sort(cmp);
+  return'<section class="bv-row" aria-label="'+esc(g)+'"><div class="bv-tile"><span class="a">'+it.length+(it.length==1?" disco":" discos")+'</span><span class="b">'+esc(g)+'</span></div>'+it.map(card).join("")+"</section>"}).join("");
  $("catalogo").innerHTML=html;$("vazio").hidden=l.length!==0;
  $("c").textContent=l.length+(l.length==1?" disco":" discos");
  var n=["g","d","o"].filter(function(k){return S[k]}).length+(S.q?1:0);
